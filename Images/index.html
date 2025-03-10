@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Cloud Ltd</title>
+    <!-- Tailwind and DaisyUI link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Raleway google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--  Tailwind  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bg-green': '#1DD100',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Css Style  -->
+    <style>
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="max-w-[1300px] mx-auto font-raleway">
+        <!--  Navbar-section -->
+        <nav class="bg-base-100 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center p-4">
+                <!-- Navbar Start -->
+                <div class="flex items-center">
+                    <div class="dropdown lg:hidden">
+                        <button tabindex="0" class="btn btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </button>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><button class="btn btn-primary rounded-full w-full">Contact</button></li>
+                        </ul>
+                    </div>
+                    <img src="./TCL-Logo.png.webp" alt="Logo" class="w-24">
+                </div>
+        
+                <!-- Navbar Center -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 lg:flex space-x-4 font-medium text-lg text-white">
+                        <li><a href="#" class="hover:text-primary">Home</a></li>
+                        <li><a href="#" class="hover:text-primary">Portfolio</a></li>
+                        <li><a href="#" class="hover:text-primary">Services</a></li>
+                        <li><a href="#" class="hover:text-primary">About Us</a></li>
+                        <li><a href="#" class="hover:text-primary">Blog</a></li>
+                        <li><button class="btn btn-primary rounded-full w-full">Contact</button></li>
+                    </ul>
+                </div>
+        
+                <!-- Navbar End -->
+                <div class="hidden md:flex">
+                    <button class="btn bg-white text-lg text-primary flex items-center gap-2">Try Free Trial
+                        <img class="w-6" src="./icon/right-arrow.png" alt="arrow">
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <section class="max-w-[1300px] mx-auto px-4">
+            <!-- Banner section  -->
+            <div class="font-raleway">
+                <div class="relative p-6 flex flex-col justify-center items-center text-center space-y-6 bg-no-repeat bg-center bg-cover min-h-screen rounded-lg"
+                    style="background-image: url(./Lonceytech\ designed2025-02-27\ 193742.png);">
+                    <h3 class="text-2xl md:text-4xl lg:text-5xl font-bold text-black mr-20 ">Redefining <br>
+                        <span class="text-black">Businesses with <br></span> IT Services
+                    </h3>
+                    <p class="text-white text-sm md:text-lg mr-20">A Reliable Outsourcing Partner from Bangladesh</p>
+                    <button class="btn bg-white text-lg text-primary mr-10">View Portfolio</button>
+                </div>
+            </div>
+            <!-- Optional-part -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+                <div class="flex items-center p-4 border-2 rounded-2xl bg-white max-h-28 max-w-64 ml-2 -mt-2">
+                    <div class="ml-8">
+                        <img class="bg-primary rounded mx-auto" src="./icon-2/Web-Development.webp" alt="">
+                        <p class="text-black text-sm md:text-lg">Web Development</p>
+                    </div>
+                </div>
+                <div class="flex items-center border-2 rounded-2xl bg-white max-h-28 max-w-72 ml-16 -mt-2">
+                    <div class="ml-8">
+                        <img class="bg-primary p-1 rounded mx-auto" src="./icon-2/Search-Engine-Optimization.webp"
+                            alt="">
+                        <p class="text-black text-sm md:text-lg">Search Engine Optimization</p>
+                    </div>
+                </div>
+                <div class="flex items-center border-2 rounded-2xl bg-white max-h-28 max-w-64 ml-32 -mt-2">
+                    <div class="ml-8">
+                        <img class="bg-primary rounded mx-auto" src="./icon-2/Image-post-production.webp" alt="">
+                        <p class="text-black text-sm md:text-lg">Image Post Production</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Your Experienced Digital Partner for Global Success -->
+        <section class="max-w-[1300px] mx-auto bg-white px-4 md:px-8">
+            <div class="flex flex-col lg:flex-row lg:mt-16 mt-5 gap-10 bg-white space-y-14 lg:space-y-0">
+                <div class="lg:w-1/2 p-4">
+                    <h2 class="text-3xl text-black font-bold mt-10 text-center lg:text-left">
+                        Your Experienced Digital<br>Partner for Global Success
+                    </h2>
+                    <p class="text-xl text-black mt-6 text-center lg:text-left">
+                        Founded in 2013, Tech Cloud Ltd has earned the trust of 1800+ clients worldwide, mostly in
+                        Italy, Netherlands, United Kingdom, Germany, Australia, USA, and Bangladesh. Our expert teams
+                        analyze your requirements for Image Post Production, Web Design, Web Application Development,
+                        and SEO, offering tailored solutions to maximize your investment. Generate more leads, sell more
+                        online, and increase your brand value with us.
+                    </p>
+                    <div class="flex justify-center lg:justify-start mt-6">
+                        <button class="btn btn-primary bg-white flex items-center"> Let's Discuss Your Project <img
+                                class="w-6 ml-2" src="./icon/right-arrow.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 flex justify-center lg:justify-end">
+                    <div class="grid grid-cols-2 gap-6">
+                        <img class="w-32 mt-10"
+                            src="./Logo/Tech-Cloud-Ltd-is-the-graphic-design-companies-by-designrush.webp" alt="">
+                        <img class="w-60 mt-10"
+                            src="./Logo/Tech-Cloud-Ltd-is-the-top-web-developer-by-goodfirms-300x257.png.webp" alt="">
+                        <img class="w-32 mt-10"
+                            src="./Logo/Tech-Cloud-Ltd-is-the-top-seo-companies-by-designrush-187x300.webp" alt="">
+                        <img class="w-64 mt-10" src="./Logo/Tech-Cloud-Ltd-recognized-Clutch-1000-in-2022-300x251.webp"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Our Services section -->
+            <div class="flex flex-col justify-center items-center text-center mt-20">
+                <h4 class="text-2xl lg:text-4xl font-bold text-[#030712] mb-4 font-raleway">At a Glance</h4>
+                <h1 class="text-3xl lg:text-5xl text-black font-extrabold">Our Services</h1>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10 px-4">
+                <!-- part-1 -->
+                <div class="space-y-20 border-2 text-black rounded-lg p-6 mb-5">
+                    <h1 class="flex gap-5 border-2 p-2 rounded-lg btn-outline btn-primary items-center"> <img
+                            src="./icon-2/Web-Development-icon.webp" alt=""> Web Development</h1>
+                    <h1 class="flex gap-5 border-2 p-2 rounded-lg btn-outline btn-primary items-center"> <img
+                            src="./icon-2/Search-Engine-Optimization-color.webp" alt=""> Search Engine Optimization</h1>
+                    <h1 class="flex gap-5 border-2 p-2 rounded-lg btn-outline btn-primary items-center mb-10"> <img
+                            src="./icon-2/Image-post-production-1.webp" alt=""> Image Post Production</h1>
+                </div>
+                <!-- part-2 -->
+                <div class="flex justify-center mb-5">
+                    <img src="./Image-post-produciton-service-tech-cloud-ltd.webp" alt=""
+                        class="w-full max-w-xs lg:max-w-md">
+                </div>
+                <!-- part-3 -->
+                <div>
+                    <h2 class="text-2xl mb-4 text-primary font-bold text-center lg:text-left mb-5">Image Post-production
+                    </h2>
+                    <p class="text-center lg:text-left">
+                        As a professional image post-production company with 250+ in-house experts, we provide
+                        high-quality services including retouching, clipping paths, ghost mannequin removal, packshot
+                        retouching, background removal, commercial editing, and eCommerce product retouching.
+                    </p>
+                    <div class="flex justify-center lg:justify-start mt-6 mb-5">
+                        <button class="btn btn-primary btn-outline text-bg-green">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Portfolio section -->
+        <section class="max-w-[1300px] mx-auto bg-white px-4 md:px-8">
+            <div id="purchase" class="lg:px-20 lg:py-6">
+                <div class="space-y-14">
+                    <div class="flex flex-col justify-center items-center text-center">
+                        <h4 class="text-2xl lg:text-4xl font-bold text-[#030712] mb-6 font-raleway">Interactive works
+                        </h4>
+                        <h1 class="text-3xl lg:text-5xl text-black font-extrabold">Our Portfolio</h1>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-4 lg:gap-16 text-black mt-6">
+                        <a class="border-2 p-2 rounded-lg font-medium">Web Development</a>
+                        <a class="border-2 p-2 rounded-lg font-medium">Search Engine Optimization</a>
+                        <a class="border-2 p-2 rounded-lg font-medium">E-Commerce</a>
+                        <a class="border-2 p-2 rounded-lg font-medium">Image Post Production</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="flex flex-col lg:flex-row lg:mx-10 lg:mt-10 bg-white space-y-14 lg:space-y-0 lg:space-x-10">
+                <div class="w-full lg:w-1/2 flex justify-center">
+                    <img class="w-full max-w-lg"
+                        src="./icon/ZXY-international-tech-cloud-ltd-web-development-client.webp" alt="">
+                </div>
+                <div class="w-full lg:w-1/2 p-4">
+                    <h2 class="text-2xl lg:text-3xl text-black font-bold mt-4">ZXY International</h2>
+                    <p class="font-family text-bg-green">Web Development</p>
+                    <p class="text-xl text-black mt-6">
+                        ZXY International’s elegant and modern website was designed by Tech Cloud Ltd. As an
+                        international apparel sourcing
+                        and buying company with 40 years of experience, ZXY showcases its products and services
+                        seamlessly. They prioritize
+                        compliance excellence and intuitive customer service, offering sustainable apparel product
+                        development. Our
+                        collaboration created a user-friendly platform, reflecting ZXY’s commitment to quality and
+                        innovation in the apparel industry.
+                    </p>
+                    <div class="flex flex-col md:flex-row justify-between mt-6 gap-4">
+                        <div>
+                            <p class="text-bg-green font-bold">Technology</p>
+                            <p class="text-black font-semibold">Laravel, React, MySQL</p>
+                        </div>
+                        <div>
+                            <p class="text-bg-green font-bold">Industry</p>
+                            <p class="text-black font-semibold">Apparel</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center lg:justify-start mt-6">
+                        <button class="btn btn-primary bg-white font-extrabold flex items-center">View Project <img
+                                class="w-6 ml-2" src="./icon/right-arrow.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ICON College section mx-->
+        <section class="max-w-[1300px] mx-auto bg-white px-4 md:px-8">
+            <div class="flex flex-col lg:flex-row lg:mt- mt- bg-white space-y-14 lg:space-y-0 lg:space-x-10">
+                <div class="w-full lg:w-1/2 p-4">
+                    <h2 class="text-2xl lg:text-3xl text-black font-bold mt-4">ICON College</h2>
+                    <p class="font-family text-bg-green">Web Development</p>
+                    <p class="text-xl text-black mt-6">
+                        Icon College, a distinguished London-based institute, collaborated with Tech Cloud Ltd to revamp
+                        their online presence. Our
+                        cutting-edge website design highlights their programs and services, ensuring seamless navigation
+                        and a modern layout. Leveraging our web development expertise,
+                        Icon College attracted more students, expanded its reach, and excelled in the competitive online
+                        landscape. The result is a stunning and user-friendly website
+                        that reflects the institution’s reputation for excellence.
+                    </p>
+                    <div class="flex flex-col md:flex-row justify-between mt-6 gap-4">
+                        <div>
+                            <p class="text-bg-green font-bold">Technology</p>
+                            <p class="text-black font-semibold">React, Cake PHP, MySQL</p>
+                        </div>
+                        <div>
+                            <p class="text-bg-green font-bold">Industry</p>
+                            <p class="text-black font-semibold">Education</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center lg:justify-start mt-6">
+                        <button class="btn btn-primary bg-white font-extrabold">View Project</button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 flex justify-center">
+                    <img class="w-full max-w-lg h-auto rounded-lg mt-5"
+                        src="./icon/portfolio-banner-icon-college-tech-cloud-ltd.webp" alt="">
+                </div>
+            </div>
+            <div class="text-center mt-10 bg-gray-200 p-12 lg:w-[1300px] -ml-8">
+                <button class="btn btn-outline btn-primary text-black font-extrabold">View All Projects <img
+                        class="w-6 ml-2" src="./icon/right-arrow.png" alt=""></button>
+            </div>
+        </section>
+        <!-- Company name section -->
+        <section class="max-w-[1300px] mx-auto bg-white px-4 md:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 justify-center items-center">
+                <img class="w-24 md:w-32 lg:w-40" src="./Company icon/Tech-Cloud-Ltd-Client-lululemon.png.webp" alt="">
+                <img class="w-24 md:w-32 lg:w-40" src="./Company icon/Tech-Cloud-Ltd-client-pepe-jeans-london.png.webp"
+                    alt="">
+                <img class="w-24 md:w-32 lg:w-40"
+                    src="./Company icon/BOS-Group-International-Tech-Cloud-Ltd-client.png.webp" alt="">
+                <img class="w-24 md:w-32 lg:w-40" src="./Company icon/OTTO-Tech-Cloud-Ltd-client.png.webp" alt="">
+                <img class="w-24 md:w-32 lg:w-40" src="./Company icon/SLAMJAM-Tech-Cloud-Ltd-client.png.webp" alt="">
+                <img class="w-24 md:w-32 lg:w-40" src="./Company icon/WE-Fashion-Tech-Cloud-Ltd-client.png.webp" alt="">
+                <img class="w-24 md:w-32 lg:w-40" src="./Company icon/AKRIS-Tech-Cloud-Client.png.webp" alt="">
+                <img class="w-24 md:w-32 lg:w-40" src="./Company icon/e5-Tech-Cloud-Ltd-client.png.webp" alt="">
+                <img class="w-24 md:w-32 lg:w-40" src="./Company icon/hummel-Tech-Cloud-Ltd-client.png.webp" alt="">
+                <img class="w-24 md:w-32 lg:w-40" src="./Company icon/OLLYGAN-Tech-Cloud-Ltd-client.png.webp" alt="">
+            </div>
+        </section>
+        <!-- Contact Us Section -->
+        <section class="max-w-[1300px] mx-auto bg-primary px-4 md:px-8 py-10 text-center">
+            <div>
+                <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Ready to work with us?</h3>
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-6">You are just one step away...</h1>
+            </div>
+            <div>
+                <button
+                    class="btn btn-outline text-xl font-bold text-white flex items-center justify-center mx-auto gap-2 px-6 py-2 border-2 border-white rounded-lg hover:bg-white hover:text-primary transition">
+                    Contact Us <img class="w-6" src="./icon/right-arrow.png" alt="">
+                </button>
+            </div>
+        </section>
+        <!-- Unique Value Propositions -->
+        <section class="max-w-[1300px] mx-auto px-4 py-4 md:py-8 md:px-8 bg-white text-black">
+            <div class="text-center">
+                <h5 class="text-3xl mt-10">Our services</h5>
+                <h1 class="text-4xl text-black font-bold ">Unique Value Propositions</h1>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 text-center">
+                <div>
+                    <img class="mx-auto mb-5" src="./icon/TCL-Logo.png.webp" alt="">
+                    <h1 class="text-2xl font-semibold mb-2">Industry Standard Quality</h1>
+                    <p>We strictly maintain the quality of our service to satisfy our clients. Our team goes above and
+                        beyond to maintain industry-standard quality in every service that we provide.</p>
+                </div>
+                <div>
+                    <img class="mx-auto mb-5" src="./icon/Affordable-Cost-Tech-Cloud-Ltd.webp" alt="">
+                    <h1 class="text-2xl font-semibold mb-2">Budget Friendly</h1>
+                    <p>Compared to other companies in the industry, we always offer the lowest prices. Our goal is to
+                        provide our clients with high-quality services at affordable prices.</p>
+                </div>
+                <div>
+                    <img class="mx-auto mb-5" src="./icon/Fast-Turnaround-Time-Tech-Cloud-Ltd.webp" alt="">
+                    <h1 class="text-2xl font-semibold mb-2">Fast Delivery Time</h1>
+                    <p>For Image post production, we retouch photos within 24-48 hours. For websites, it takes 3 to 30
+                        days depending on the project size.</p>
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-10 mt-10 items-center">
+                <div class="w-full lg:w-1/2">
+                    <img class="w-full rounded-box"
+                        src="./icon/get-image-post-production-service-trial-tech-cloud-ltd-1.png.webp" alt="">
+                </div>
+                <div class="w-full lg:w-1/2 text-white">
+                    <h2 class="text-xl">Convinced?</h2>
+                    <p class="text-3xl font-bold text-bg-green">Take the FREE TRIAL Today!</p>
+                    <p class="mt-5">Uncover the transformative power of our Image Post Production services, combining
+                        top-notch quality with lightning-fast turnaround times.</p>
+                    <div class="flex justify-between mt-5">
+                        <div>
+                            <p class="text-bg-green font-bold">Technology</p>
+                            <p class="text-black">Laravel, React, MySQL</p>
+                        </div>
+                        <div>
+                            <p class="text-bg-green font-bold">Industry</p>
+                            <p class="text-black">Apparel</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary bg-white font-extrabold mt-5">View Project <img class="w-8"
+                            src="./icon/right-arrow.png" alt=""></button>
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-10 mt-10 items-center">
+                <div class="w-full lg:w-1/2">
+                    <img class="w-full rounded-box" src="./Web-Banner-2.webp" alt="">
+                </div>
+                <div class="w-full lg:w-1/2 text-white">
+                    <h2 class="text-xl">Convinced?</h2>
+                    <p class="text-3xl font-bold text-primary">Take the FREE TRIAL Today!</p>
+                    <p class="mt-5">Uncover the transformative power of our Image Post Production services, combining
+                        top-notch quality with lightning-fast turnaround times.</p>
+                    <div class="flex justify-between mt-5">
+                        <div>
+                            <p class="text-primary font-bold">Technology</p>
+                            <p class="text-black">Laravel, React, MySQL</p>
+                        </div>
+                        <div>
+                            <p class="text-primary font-bold">Industry</p>
+                            <p class="text-black">Apparel</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary bg-white font-extrabold mt-5">View Project <img class="w-8"
+                            src="./icon/right-arrow.png" alt=""></button>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section class="max-w-[1300px] mx-auto bg-primary px-4 md:px-8">
+            <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center">
+                <div class="text-black font-bold mt-5 text-center lg:text-left">
+                    <h3 class="text-3xl text-white font-bold">Testimonials</h3>
+                    <h1 class="font-family text-black text-4xl md:text-5xl font-bold mt-5 mb-5">Our happy <br
+                            class="hidden md:inline"> customers speak <br class="hidden md:inline"> for us</h1>
+                </div>
+                <div class="flex flex-col md:flex-row w-full lg:w-[600px] gap-5 mt-10 mb-10 justify-center">
+                    <div>
+                        <img class="rounded-lg w-full md:w-auto" src="./Screenshot 2025-03-02 000844.png" alt="">
+                    </div>
+                    <div>
+                        <img class="rounded-lg w-full md:w-auto" src="./Screenshot 2025-03-02 000921.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- our blog -->
+        <section class="max-w-[1300px] mx-auto bg-white px-5">
+            <div class="text-center">
+                <h3 class="text-4xl font-bold p-6">Our Blog</h3>
+                <h1 class="text-5xl font-extrabold text-black mb-10">Latest Posts</h1>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-10">
+                <!-- Main Blog Post -->
+                <div class="lg:w-2/3 text-black">
+                    <img class="w-full h-[300px] rounded-lg mb-5 object-cover" src="./Screenshot 2025-03-02 005108.png"
+                        alt="">
+                    <h1 class="text-xl font-bold">15 Inspiring Restaurant Web Design Ideas</h1>
+                    <p class="text-gray-600">These days, most people use the internet to find information about
+                        businesses,
+                        including restaurants. Before dining in or ordering food online, the first thing they...</p>
+                </div>
+                <!-- Sidebar Blog Posts -->
+                <div class="lg:w-1/3 space-y-5">
+                    <div class="flex flex-col sm:flex-row border-2 rounded-lg p-2 gap-5">
+                        <img class="w-full sm:w-32 h-32 rounded-lg object-cover" src="./Seo-rich-text.webp" alt="">
+                        <div>
+                            <h1 class="text-lg font-semibold">What is SEO Rich Text? A Complete Guide</h1>
+                            <p class="text-gray-600 text-sm">Ever wondered what makes some websites stand out in search
+                                engine results?</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row border-2 rounded-lg p-2 gap-5">
+                        <img class="w-full sm:w-32 h-32 rounded-lg object-cover" src="./Enterprise-SEO-Audit-2.webp"
+                            alt="">
+                        <div>
+                            <h1 class="text-lg font-semibold">Enterprise SEO Audit Demystified</h1>
+                            <p class="text-gray-600 text-sm">Enterprise websites are often large and complex, with
+                                massive amounts of content...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Form section -->
+        <section class="max-w-[1300px] mx-auto bg-primary text-white px-5">
+            <div class="flex flex-col lg:flex-row p-6 gap-10">
+                <div class="lg:w-2/3">
+                    <h3 class="text-3xl font-semibold mt-5">You've got a vision?</h3>
+                    <h1 class="text-4xl lg:text-5xl font-bold mb-5">We have a way to get you there...</h1>
+                    <p class="mb-5">Your business goals are our priority, so no matter what you want to accomplish, we
+                        can assist you. Let’s talk about your goal!</p>
+
+                    <form>
+                        <div class="space-y-5">
+                            <div class="flex flex-col md:flex-row gap-5">
+                                <input class="w-full md:w-64 bg-white text-black p-2 rounded-lg" type="text"
+                                    placeholder="Your Full Name" required>
+                                <input class="w-full md:w-64 bg-white text-black p-2 rounded-lg" type="text"
+                                    placeholder="Company Name" required>
+                            </div>
+                            <div class="flex flex-col md:flex-row gap-5">
+                                <input class="w-full md:w-64 bg-white text-black p-2 rounded-lg" type="email"
+                                    placeholder="Your Email" required>
+                                <input class="w-full md:w-64 bg-white text-black p-2 rounded-lg" type="text"
+                                    placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <textarea class="bg-white text-black w-full p-2 rounded-lg mb-5" placeholder="Message"
+                                required></textarea>
+                            <p class="text-sm text-gray-300">Could not connect to the reCAPTCHA service. Please check
+                                your internet connection and reload to get a reCAPTCHA challenge.</p>
+                        </div>
+                        <button
+                            class="w-full md:w-32 text-primary text-lg font-bold bg-white p-2 rounded mt-5">Submit</button>
+                    </form>
+                </div>
+
+                <div class="lg:w-1/3 flex flex-col items-center">
+                    <img class="w-full lg:w-96 rounded-lg mt-5"
+                        src="./web-design-and-development-service-tech-cloud-ltd.webp" alt="">
+                    <h1 class="text-2xl font-semibold mt-3 mb-2 text-center lg:text-left">Web Design & Development</h1>
+                    <p class="text-center lg:text-left">Web design focuses on the visual elements and user experience
+                        (UX), like colors, fonts, and layout, while development is the technical genius behind the
+                        scenes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="max-w-[1300px] mx-auto bg-[#030712]">
+        <div class="p-3 lg:px-12 lg:py-10">
+            <div class="flex flex-col lg:flex-row mb-5 gap-10 lg:gap-24">
+                <div class="text-center lg:text-left">
+                    <img class="w-24 mx-auto lg:mx-0" src="./TCL-Logo.png.webp" alt="">
+                    <p class="text-xl font-semibold text-white mt-5 lg:mt-10">Where innovation meets excellence, we
+                        specialize
+                        in crafting stunning websites, optimizing digital presence, and perfecting images. Our services
+                        enhance brands to new heights, blending creativity with precision in every project we undertake.
+                    </p>
+                    <div class="flex justify-center lg:justify-start mt-10 gap-3">
+                        <img class="btn-outline bg-white border-2 rounded-full w-8 h-8 p-1"
+                            src="./Social Media icon/letter-f.png" alt="">
+                        <img class="btn-outline bg-white border-2 rounded-full w-8 h-8 p-1"
+                            src="./Social Media icon/twitter.png" alt="">
+                        <img class="btn-outline bg-white border-2 rounded-full w-8 h-8 p-1"
+                            src="./Social Media icon/linkedin.png" alt="">
+                        <img class="btn-outline bg-white border-2 rounded-full w-8 h-8 p-1"
+                            src="./Social Media icon/youtube.png" alt="">
+                        <img class="btn-outline bg-white border-2 rounded-full w-8 h-8 p-1"
+                            src="./Social Media icon/instagram.png" alt="">
+                        <img class="btn-outline bg-white border-2 rounded-full w-8 h-8 p-1"
+                            src="./Social Media icon/pinterest.png" alt="">
+                    </div>
+                </div>
+                <div class="text-center lg:text-left">
+                    <h4 class="text-xl text-primary font-semibold mb-3 font-inter">Drop us an email</h4>
+                    <h1 class="text-2xl text-white font-semibold mb-3 font-inter">sales@techcloudltd.com</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-white">
+                        <div>
+                            <h2 class="text-xl font-semibold">Dhaka</h2>
+                            <p>House 379, Road 6, Baridhara DOHS, Dhaka - 1206, Bangladesh</p>
+                            <p>Contact: +88 01799-920150</p>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-semibold">London</h2>
+                            <p>147 Teviot Street, Tower Hamlets, London - E14 6PY, United Kingdom</p>
+                            <p>Contact: +442031515417</p>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-semibold">Florida</h2>
+                            <p>8119 NW 51st St, Gainesville, Florida - 32653, United States</p>
+                            <p>Contact: +19784842424</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:px-12 mb-10 text-center lg:text-left">
+            <div>
+                <h4 class="text-2xl font-semibold font-inter">Company</h4>
+                <p class="text-white">About</p>
+                <p class="text-white">Services</p>
+                <p class="text-white">Careers at TCL</p>
+                <p class="text-white">Portfolio</p>
+                <p class="text-white">Post-Processing Works</p>
+                <p class="text-white">Web Development Projects</p>
+                <p class="text-white">eCommerce Projects</p>
+                <p class="text-white">SEO Case Studies</p>
+                <p class="text-white">Blog</p>
+                <p class="text-white">Contact</p>
+                <p class="text-white">Write For Us</p>
+            </div>
+            <div>
+                <h2 class="text-2xl text-primary font-semibold mb-3 font-inter">Services</h2>
+                <p class="text-white">Image Post-production</p>
+                <p class="text-white">3D Rendering</p>
+                <p class="text-white">Search Engine Optimization (SEO)</p>
+                <p class="text-white">Web Development</p>
+                <p class="text-white">Web Application Development</p>
+                <p class="text-white">eCommerce Development</p>
+                <p class="text-white">WordPress Development</p>
+                <p class="text-white">Graphic Design</p>
+                <p class="text-white">Resource Augmentation</p>
+                <p class="text-white">Digital Marketing</p>
+
+            </div>
+            <div>
+                <h4 class="text-2xl text-white font-semibold mb-3">Image Post-production</h4>
+                <p class="text-white">Clipping Path</p>
+                <p class="text-white">Photo Retouching</p>
+                <p class="text-white">Ghost Mannequin Photo Editing</p>
+                <p class="text-white">eCommerce Image Editing</p>
+                <p class="text-white">Image Background Removal</p>
+                <p class="text-white">Packshot Retouching</p>
+                <p class="text-white">Product Photo Retouching</p>
+                <p class="text-white">Jewelry Photo Retouching</p>
+                <p class="text-white">Photo Cutout</p>
+                <p class="text-white">Headshot Retouching</p>
+                <p class="text-white">Photoshop Image Masking</p>
+            </div>
+            <div>
+                <h4 class="text-2xl text-secondary font-semibold mb-3 font-inter">Locations</h4>
+                <p class="text-white">Web Design Florida</p>
+                <p class="text-white"> SEO Comapny Florida</p>
+            </div>
+        </div>
+        <hr>
+        <div class="flex flex-col lg:flex-row justify-between text-center lg:text-left font-inter lg:px-12 mt-10">
+            <div class="text-[#FFFFFFCC] text-lg mb-6 lg:mb-5">
+                <h2>Copyright © 2025 Tech Cloud Ltd. All rights reserved.</h2>
+                <p>Headquartered in Bangladesh with offices in London and Florida.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row font-medium text-light text-white gap-5 mt-4">
+                <p>Terms & Conditions</p>
+                <p>Return & Refund Policy</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
